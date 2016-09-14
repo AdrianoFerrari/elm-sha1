@@ -1,4 +1,4 @@
-module Main (..) where
+module Main exposing (..)
 
 import Graphics.Element exposing (show)
 import Encoder exposing (..)

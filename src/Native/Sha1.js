@@ -1,21 +1,7 @@
-
-// setup
-Elm.Native = Elm.Native || {};
-Elm.Native.Sha1 = Elm.Native.Sha1 || {};
-
-// definition
-Elm.Native.Sha1.make = function(localRuntime) {
-	'use strict';
-
-  if (Elm.Native.Sha1.values) { return Elm.Native.Sha1.values; }
+var _creationix$elm_git$Native_Sha1 = function()
+{
+  // My addition
   var shared = new Uint32Array(80);
-  return (Elm.Native.Sha1.values = {
-		sha1: function (buffer) {
-      var shasum = create(true);
-      shasum.update(buffer);
-      return shasum.digest();
-    }
-	});
 
   // A pure JS implementation of sha1 for non-node environments.
   // TODO: port to elm
@@ -157,4 +143,14 @@ Elm.Native.Sha1.make = function(localRuntime) {
       return hex;
     }
   }
-};
+
+
+  return {
+    sha1: function (buffer) {
+      var shasum = create(true);
+      shasum.update(buffer);
+      return shasum.digest();
+    }
+  };
+
+}();
