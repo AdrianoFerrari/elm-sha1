@@ -1,4 +1,4 @@
-var _creationix$elm_git$Native_Sha1 = function()
+var _AdrianoFerrari$elm_sha1$Native_Sha1 = function()
 {
   // My addition
   var shared = new Uint32Array(80);
